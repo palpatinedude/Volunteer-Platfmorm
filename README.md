@@ -1,25 +1,70 @@
-Cooperative System for Disaster Relief Registration and Assistance
+# Cooperative System for Disaster Relief Registration and Assistance
 
-This project aims to develop a cooperative system for registering requests for assistance and servicing needs in a community affected by a natural disaster. The system allows citizens to declare their specific needs for various items or to state that they have surplus items available for donation.
-Rescuers, operating in designated vehicles, facilitate the pickup and delivery of items between citizens and a central warehouse acting as a base.
+## 🌍 Project Overview
 
-Features:
+This system is designed to support disaster-affected communities by enabling coordinated efforts between citizens, rescuers, and a central base (warehouse). It facilitates seamless communication and logistics to manage item requests, donations, and distributions during emergencies like earthquakes, floods, or pandemics.
 
-  1.  User Registration: Citizens can register accounts using their mobile phones.
-  2.  Request Assistance: Citizens can declare their needs for various items such as water, food, medicine, etc.
-  3.  Donation: Citizens can declare surplus items available for donation.
-  4.  Mission Management: Rescuers can view all requests and offers on a map interface and undertake one or more missions for item pickup or delivery.
-  5.  Central Warehouse: The base serves as a central warehouse for storing and distributing items.
-  6.  Announcements: The base can announce needs for items that are in short supply, displayed on citizens' mobile phones.
-  7.  Item Declaration: Citizens can declare whether they have items requested by the base for pickup by rescuers.
+---
 
-Technologies Used:
+## 🚀 Key Features
 
-    Frontend:
-        1. HTML
-        2. CSS
-        3. JavaScript
-        4. Mapping libraries (e.g., Leaflet, Google Maps API)
-    Backend:
-        1. PHP
-        2. MySQL (for database management)
+### 👤 User Registration
+- Citizens can register using their mobile numbers.
+- Simple and secure login system.
+
+### 🆘 Request Assistance
+- Citizens can request essential items (e.g., food, water, medicine).
+- Each request includes item details, quantity, location, and urgency.
+
+### 🙌 Donate Surplus Items
+- Citizens with extra resources can list them for donation.
+- Donations can be picked up or dropped at the central warehouse.
+
+### 📦 Central Warehouse (Base)
+- Acts as a storage hub for incoming donations and outgoing deliveries.
+- Can issue **broadcast announcements** for urgent item needs.
+
+### 🚑 Mission Management for Rescuers
+- Map-based dashboard to view requests and donation points.
+- Rescuers can select missions, get optimized routes, and update statuses.
+
+### 📣 Announcements & Notifications
+- Real-time announcements from the base displayed on users’ phones.
+- Notifications for donation requests matching citizen inventories.
+
+---
+
+## 🧠 🔄 New Feature: Real-Time Matching Algorithm
+
+**Smart Prioritization & Matching System**
+
+This new module automatically matches:
+- **High-urgency** requests with **nearby donations** or **available warehouse stock**.
+- **Rescuers** with **missions** based on location, urgency, and route efficiency.
+
+🔍 *Example:*
+If a citizen urgently needs clean water, the system prioritizes:
+1. Nearest donor with water.
+2. If none, nearest warehouse with stock.
+3. Assigns the closest available rescuer.
+
+**Benefits:**
+- Faster response time for critical needs.
+- Balanced load distribution among rescuers.
+- Reduced travel and optimized resource usage.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **HTML, CSS, JavaScript** – UI for citizens and rescuers.
+- **Leaflet / Google Maps API** – Interactive maps for mission planning and item tracking.
+
+### Backend
+- **PHP** – Handles routing, APIs, authentication, and server-side logic.
+- **MySQL** – Manages data related to users, items, missions, and warehouse stock.
+
+---
+
+
